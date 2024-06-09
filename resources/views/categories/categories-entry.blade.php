@@ -1,7 +1,9 @@
 @extends('layouts.app')
+
 @section('title')
 Tambah Category | PS Jelmi Admin
 @endsection
+
 @section('content')
 <h3>Input Categories</h3>
 <div class="form-login">
@@ -13,7 +15,7 @@ Tambah Category | PS Jelmi Admin
     <p style="font-size: 10px; color: red">{{ $message }}</p>
     @enderror
 
-    <label for="price">Harga</label>
+    <label for="price">Price</label>
     <input class="input" type="text" name="harga" id="price" placeholder="Price" value="{{ old('harga') }}" />
     @error('harga')
     <p style="font-size: 10px; color: red">{{ $message }}</p>

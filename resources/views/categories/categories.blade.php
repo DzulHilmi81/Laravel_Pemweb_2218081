@@ -1,7 +1,9 @@
 @extends('layouts.app')
+
 @section('title')
 Categories | PS Jelmi Admin
 @endsection
+
 @section('content')
 <h3>Categories</h3>
 <button type="button" class="btn btn-tambah">
@@ -22,7 +24,7 @@ Categories | PS Jelmi Admin
     <tr>
       <td><img src="{{ asset('img_categories/' . $category->gambar)  }}" alt="" width="300px"></td>
       <td>{{ $category->nama }}</td>
-      <td>Rp. {{ number_format($category->harga) }}</td>
+      <td>Rp. {{ $category->harga}}</td>
       <td>{{ $category->deskripsi }}</td>
       <td>
         <a class='btn-edit' href="/category/edit/{{ $category->id_categories }}">Edit</a>

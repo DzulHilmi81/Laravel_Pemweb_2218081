@@ -1,7 +1,9 @@
 @extends('layouts.app')
+
 @section('title')
 Hapus Category | PS Jelmi Admin
 @endsection
+
 @section('content')
 <h3>Hapus Categories</h3>
 <div class="form-login">
